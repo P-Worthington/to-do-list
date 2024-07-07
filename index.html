@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <!--Allows adaptation to alternate screensizes-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Page Title-->
+    <title></title>
+    <!--Link Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <!--Link to own stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1> To Do</h1>
+    </div>
+
+    <div class="container">
+        <form id="newItemForm">
+            <div class="mb-3">
+                <label for="newItem" class="form-label">Add new item</label>
+                <input type="text" class="form-control" id="newItem" aria-describedby="emailHelp">
+            </div>    
+            <button onclick="addNewItem()"type="button" class="btn btn-danger" id="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <ul id="list">
+
+        </ul>
+    </div>
+
+    </div>
+
+    <!--Font Aweomse -->
+    <script src="https://kit.fontawesome.com/83eae7a1c8.js" crossorigin="anonymous"></script>
+    <!--Link jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--Link Bootstrap js-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!--Link own js-->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
