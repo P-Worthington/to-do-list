@@ -13,6 +13,7 @@ function addToList(a) {
     document.getElementById("list").appendChild(node);
     length = addID();
     node.id = `list-id-${length}`;
+    return length
 };
 
 function addID () {
@@ -21,7 +22,17 @@ function addID () {
     return length
 }
 
+function addHandler(a) {
+    let item = document.getElementById(`list-id-${length}`);
+    item.addEventListener("click", removeItem(item));
+}
+
+function removeItem(item) {
+    item.remove();
+}
+
 function addNewItem() {
-    let item = getValue(0)
-    addToList(item)
+    let item = getValue(0);
+    number = addToList(item);
+    //addHandler(number);
 };
